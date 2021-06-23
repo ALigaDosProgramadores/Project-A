@@ -1,23 +1,22 @@
 const Discord = require('discord.js')
 
 module.exports = {
-
   run: async (client, message, args) => {
-    const embed = new Discord.RichEmbed()
-      .setAuthor(`🏓 ${Math.round(client.ping)}ms`)
-      .setColor(message.member ? message.member.displayColor : global.CLIENT_DEFAULT_COLOR)
+    const embed = new Discord.MessageEmbed()
+      .setColor(process.env.COLOR)
+      .setAuthor(`🏓 ${Math.round(client.ws.ping)} ms`)
 
     message.channel.send(embed)
   },
 
   conf: {},
 
-  get help () {
+  get help() {
     return {
       name: 'ping',
       description: 'Mostra a latência do bot.',
       usage: 'ping',
-      category: 'Info'
+      category: 'Informação',
     }
-  }
+  },
 }

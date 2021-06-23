@@ -1,23 +1,29 @@
 {
   "name": "project-a",
   "version": "1.0.0",
-  "description": "Um bot para o discord.",
+  "description": "Um bot para o Discord",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon ."
   },
   "author": "Liga dos Programadores",
-  "contributors": [
-    "Rafael \"Bee\" Pereira <rafael@beecoding.net> (https://rafael.wtf)",
-    "Álvaro Filho (https://alvarofilho.github.io/)"
-  ],
-  "license": "Unlicense",
+  "license": "AGPL-3.0-only",
   "dependencies": {
-    "discord.js": "^11.5.1",
+    "ascii-table": "^0.0.9",
+    "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
-    "duck-duck-scrape": "^1.0.3",
-    "enmap": "^5.2.4",
-    "moment": "^2.24.0"
+    "figlet": "^1.5.0",
+    "moment": "^2.29.1",
+    "ms": "^2.1.3",
+    "weather-js": "^2.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "nodemon": "^2.0.7"
+  }
 }
